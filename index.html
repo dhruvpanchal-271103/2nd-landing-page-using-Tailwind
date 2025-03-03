@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netbook-Social Networking landing page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-full max-w-full container">
+    <div class="bg-gradient-to-b from-white to-blue-100">
+
+
+        <!-- Navbar -->
+        <nav class="flex items-center justify-between py-6 px-8 lg:px-20 border border-blue-100">
+            <div class="flex items-center space-x-10 lg:space-x-20">
+                <div class="flex items-center text-xl md:text-2xl font-bold gap-1.5">
+                    <img src="/Images/Logo.png" alt="Logo" height="34px" width="34px">
+                    Netbook
+                </div>
+
+                <div id="nav-links" class="hidden md:flex space-x-6 text-sm">
+                    <a href="#" class="text-gray-700">Home</a>
+                    <a href="#" class="text-gray-700 flex items-center gap-1">Community
+                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none">
+                            <path d="M7.3125 3.375L4.5 6.1875L1.6875 3.375" stroke="#656464" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-700">Blog</a>
+                    <a href="#" class="text-gray-700">Events</a>
+                </div>
+            </div>
+
+            <div class="md:flex items-center space-x-6 lg:ml-5">
+                <input type="text" placeholder="🔍 Search Here..."
+                    class="p-2 bg-white shadow-sm text-sm text-gray-700 w-32">
+                <button class="hidden md:flex bg-blue-500 text-white text-sm px-9 py-3 rounded-xl">Log in</button>
+            </div>
+
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#2472f0">
+                    <path d="M86-191v-126h788v126H86Zm0-226v-126h788v126H86Zm0-226v-126h788v126H86Z" />
+                </svg>
+            </button>
+
+            <!-- Toggle Menu Content -->
+            <div id="mobile-menu"
+                class="hidden flex flex-col items-center space-y-4 absolute top-16 left-0 w-full bg-white shadow-lg py-4">
+                <a href="#" class="text-gray-700">Home</a>
+                <a href="#" class="text-gray-700 flex items-center gap-1">Community
+                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none">
+                        <path d="M7.3125 3.375L4.5 6.1875L1.6875 3.375" stroke="#656464" stroke-width="1.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-700">Blog</a>
+                <a href="#" class="text-gray-700">Events</a>
+
+                <button class="bg-blue-500 text-white text-sm px-9 py-3 rounded-xl">
+                    Log in
+                </button>
+            </div>
+
+            <script>
+                document.getElementById('menu-toggle').addEventListener('click', function () {
+                    document.getElementById('mobile-menu').classList.toggle('hidden');
+                });
+            </script>
+        </nav>
+
+        <!-- Hero Section -->
+        <hero class="px-4 md:px-10 lg:px-20 flex flex-col lg:flex-row items-center gap-10">
+            <div class="text-center lg:text-left mt-6">
+                <span class="bg-blue-100 text-blue-700 px-8 py-3 rounded-lg text-xs">Netbook community</span>
+                <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold my-6 leading-light">Your Solutions For Community!
+                </h1>
+                <p class="text-gray-600 max-w-lg text-lg margin-auto lg:mx-0">More than 2 billion people in over
+                    countries use socibook
+                    to stay
+                    in touch with friends & family.</p>
+                <div class="mt-6 space-x-4 justify-center lg:justify-start flex items-center">
+                    <button class="bg-blue-500 text-white px-9 py-5 rounded-xl">About More</button>
+                    <button class="border border-blue-500 text-blue-500 px-9 py-5 rounded-xl">Invite Friend</button>
+                </div>
+            </div>
+            <div>
+                <section class="mb-20 mt-10 w-full xl:w-2/2">
+                    <img src="/Images/Header-image.png" alt="Community Illustration" class="w-auto text-center">
+                </section>
+            </div>
+        </hero>
+    </div>
+
+    <!-- Social Network section -->
+    <section class="px-4 md:px-10 lg:px-20 mt-20 flex flex-col lg:flex-row items-center">
+        <div class="lg:w-3/5 text-center md:text-left">
+            <h3 class="text-blue-500 font-medium text-lg mb-2">Whats Netbooks?</h3>
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 leading-tight lg:w-3/5">Why Join to Netbook Social Network?
+            </h2>
+            <p class="text-gray-600 mb-6 text-base lg:w-3/5">Recent surveys have indicated that small businesses
+                recognise
+                the need they have to connect with consumers.</p>
+            <ul class="lg:space-y-4 mt-8 justify-between lg:justify-start flex lg:flex-col">
+                <li class="flex items-center gap-3 text-lg text-gray-900">
+                    <div><svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4.52832" r="4" fill="#217BF4" />
+                        </svg>
+                    </div>
+                    Groups
+                </li>
+                <li class="flex items-center gap-3 text-lg text-gray-900">
+                    <div><svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4.52832" r="4" fill="#217BF4" />
+                        </svg>
+                    </div>
+                    Messages
+                </li>
+                <li class="flex items-center gap-3 text-lg text-gray-900">
+                    <div><svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4.52832" r="4" fill="#217BF4" />
+                        </svg>
+                    </div>
+                    Share
+                </li>
+            </ul>
+        </div>
+
+        <div class="grid grid-cols-2 items-center justify-center gap-4 my-10 lg:mt-0">
+            <div class="relative lg:w-auto">
+                <img src="/Images/video-play.png" alt="Group Discussion" width="270px" height="368px"
+                    class="object-cover rounded-lg">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <button class="bg-white p-3 rounded-full shadow-md">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="white" />
+                            <polygon points="10,8 16,12 10,16" fill="blue" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4 items-center justify-center">
+                <img src="/Images/social-image-1.png" alt="Laptop User" class="object-cover rounded-lg" height="238px"
+                    width="265px">
+                <img src="/Images/social-image-2.png" alt="Network Cables" class="object-cover rounded-lg"
+                    height="238px" width="265px">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Community, Awards and Achievement section  -->
+    <section class="px-4 md:px-10 lg:px-20 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-white shadow-lg rounded-xl p-6 text-gray-800">
+            <div class="flex items-center space-x-2 text-xl font-semibold">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#217BF4">
+                    <path
+                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                </svg>
+                <span>4.8 Rating</span>
+            </div>
+            <div class="flex items-center mt-6 text-base">
+                <div class="flex -space-x-16">
+                    <img class="w-24 h-24 border-2 border-white" src="/Images/people-1.png" alt="User">
+                    <img class="w-24 h-24 border-2 border-white" src="/Images/people-2.png" alt="User">
+                    <img class="w-24 h-24 border-2 border-white" src="/Images/people-3.png" alt="User">
+                </div>
+                <span class="text-blue-600 font-medium">+836k </span>Members
+            </div>
+            <p class="text-gray-400 mt-3 text-base w-64">More than 2 billion we people over countries use socibooks we
+                to stay in touch with friends.</p>
+            <a href="#" class="text-blue-500 text-base font-medium mt-10 inline-block">Join Our Community →</a>
+        </div>
+
+
+        <div class="bg-white shadow-lg rounded-xl p-6 text-gray-800">
+            <div class="flex items-center space-x-2 text-xl font-semibold">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#217BF4">
+                    <path
+                        d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+                </svg>
+                <span>Awwwards</span>
+            </div>
+            <div class="flex items-center mt-12">
+                <img src="/Images/Github.png" alt="Github logo" height="70px" width="70px">
+                <span class="ml-2 text-gray-700 text-base">Best of <span class="text-blue-500">2021</span> on
+                    Github</span>
+            </div>
+            <p class="text-gray-400 mt-8 w-64">More than 2 billion we people over countries use socibooks we to stay in
+                touch with friends.</p>
+            <a href="#" class="font-medium mt-6 inline-block">Go To Awards →</a>
+        </div>
+
+
+        <div class="text-center md:text-left mt-2 p-4">
+            <h4 class="text-blue-500 font-medium text-lg">Our Achievement</h4>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-4">
+                We are Connecting You The Digital Life.
+            </h2>
+            <p class="text-gray-600 mt-6 md:pr-5 text-base">The scope the Social Media becomes crucial Is helps the
+                business to
+                directly engage with their needs and wants.</p>
+            <button
+                class="bg-blue-600 text-sm text-white px-10 py-5 rounded-xl mt-12 flex items-center justify-center space-x-6 w-full md:w-auto">
+                <span>Discover me</span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#EFEFEF">
+                    <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Community Main Feature -->
+
+    <section class="bg-gradient-to-b from-white to-blue-50 px-4 md:px-10 lg:px-28 py-20">
+        <div class="text-center">
+            <h3 class="text-lg text-blue-600">
+                Our Community
+            </h3>
+            <h2 class="text-2xl font-bold md:text-3xl lg:text-4xl">
+                Community Main Feature
+            </h2>
+
+            <div class="w-full flex justify-center">
+                <p class="w-96 text-base mt-6 text-gray-600">
+                    The wise man therefore always holds in these matters to this principle of selection.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-20 ">
+
+
+            <div class="bg-white rounded-2xl flex p-2 sticky items-center shadow-md">
+
+                <img src="/Images/community-image-1.png" alt="Members" class="w-28 w-28">
+
+                <div class="text-left mx-4 my-2">
+                    <h2 class="text-2xl font-semibold">Members, Friends</h2>
+                    <p class="text-gray-600 mt-3">Members, Friends Connection ( like followers ), Private Message</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl flex p-6 sticky items-center">
+                <img src="/Images/community-image-2.png" alt="Groups" class="w-28 w-28">
+
+                <div class="text-left mx-4 my-2">
+                    <h2 class="text-2xl font-semibold">Groups</h2>
+                    <p class="text-gray-600 mt-3">Your users can create groups to let other users to join and talk</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl flex p-6 sticky items-center">
+                <img src="/Images/community-image-3.png" alt="SMS" class="w-28 w-28">
+
+                <div class="text-left mx-4 my-2">
+                    <h2 class="text-2xl font-semibold">Forum</h2>
+                    <p class="text-gray-600 mt-3">Forum is ready by BBPress. Your users can make topics and talk.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl flex p-6 sticky items-center">
+                <img src="/Images/community-image-4.png" alt="Custom" class="w-28 w-28">
+
+                <div class="text-left mx-4 my-2">
+                    <h2 class="text-2xl font-semibold">Custom Module</h2>
+                    <p class="text-gray-600 mt-3">You can create Members, Groups Module. We already created 3 modules.
+                        It's by drag & drop live builder.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl flex p-6 sticky items-center">
+                <img src="/Images/community-image-5.png" alt="List" class="w-28 w-28">
+
+                <div class="text-left mx-4 my-2">
+                    <h2 class="text-2xl font-semibold">List Builder</h2>
+                    <p class="text-gray-600 mt-3">Members, Groups list can be modified by drag & drop live builder.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl flex p-6 sticky items-center">
+                <img src="/Images/community-image-6.png" alt="Scroll Effects" class="w-28 w-28">
+
+                <div class="text-left mx-4 my-2">
+                    <h2 class="text-2xl font-semibold">List Scroll Effects</h2>
+                    <p class="text-gray-600 mt-3">8 different scroll effects are ready.
+                        You can always change by your tastes.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Active Members -->
+
+    <section class="bg-gradient-to-b from-white to-blue-50 px-4 md:px-10 lg:px-20 py-20">
+        <div class="text-center">
+            <h3 class="text-lg text-blue-600">
+                Valuable Team
+            </h3>
+            <h2 class="text-2xl font-bold md:text-3xl lg:text-4xl">
+                Our Active Members
+            </h2>
+            <div class="w-full flex justify-center">
+                <p class="md:w-2/5 text-base mt-6 text-gray-600">
+                    when an unknown printer took a galley of type and meeting fari scrambled it.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="w-full flex justify-center">
+            <div class="w-1/2text-base mt-5 md:mt-10 p-2 bg-blue-50 rounded-xl flex flex-row text-gray-600 ">
+                <button class="px-6 md:px-12 py-2 md:py-4">
+                    Newst
+                </button>
+                <button class="px-6 md:px-12 py-2 md:py-4">
+                    Popular
+                </button>
+                <button class="text-white bg-blue-600 px-6 md:px-12 py-2 md:py-4 rounded-xl">
+                    Active
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+
+            <div class="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center">
+                <div class="relative">
+                    <img src="/Images/member-1.png" alt="Fahim Rahman"
+                        class="w-40 h-40 rounded-full border-4 border-white shadow-lg">
+                    <div class="absolute bottom-0 left-14 right-14 transform translate-x-2 translate-y-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#217BF4" />
+                            <path d="M16.125 9.37549L10.875 14.6253L8.25 12.0005" stroke="white" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-semibold mt-6">Fahim Rahman</h3>
+                <p class="text-gray-600 text-base">@rahman</p>
+            </div>
+
+            <div class="p-6 rounded-xl shadow-sm flex flex-col items-center">
+                <div class="relative">
+                    <img src="/Images/member-2.png" alt="Kazi Rahman"
+                        class="w-40 h-40 rounded-full border-4 border-white shadow-lg">
+                    <div class="absolute bottom-0 left-14 right-12 transform translate-x-2 translate-y-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#217BF4" />
+                            <path d="M16.125 9.37549L10.875 14.6253L8.25 12.0005" stroke="white" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-semibold mt-6">Kazi Rahman</h3>
+                <p class="text-gray-600 text-base">@Rahman</p>
+            </div>
+            <div class="p-6 rounded-xl shadow-sm flex flex-col items-center">
+                <div class="relative">
+                    <img src="/Images/member-3.png" alt="Masterero Ali"
+                        class="w-40 h-40 rounded-full border-4 border-white shadow-lg">
+                    <div class="absolute bottom-0 left-14 right-14 transform translate-x-2 translate-y-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#217BF4" />
+                            <path d="M16.125 9.37549L10.875 14.6253L8.25 12.0005" stroke="white" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-semibold mt-6">Masterero Ali</h3>
+                <p class="text-gray-600 text-base">@Master</p>
+            </div>
+            <div class="p-6 rounded-xl shadow-sm flex flex-col items-center">
+                <div class="relative">
+                    <img src="/Images/member-4.png" alt="Alia Karon"
+                        class="w-40 h-40 object-cover max-w-full rounded-full border-4 border-white shadow-lg">
+                    <div class="absolute bottom-0 left-14 right-14 transform translate-x-2 translate-y-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#217BF4" />
+                            <path d="M16.125 9.37549L10.875 14.6253L8.25 12.0005" stroke="white" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-semibold mt-6">Alia Karon</h3>
+                <p class="text-gray-600 text-base">@Alia</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Get our Application -->
+
+    <section class="bg-blue-100 blex px-4 md:px-10 lg:px-20 md:flex">
+        <div class="text-center md:text-left md:w-1/2 py-28">
+            <h3 class="text-blue-600 text-lg">
+                Get Our Aplication
+            </h3>
+            <h2 class="md:w-96 text-lg md:text-xl lg:text-2xl mt-2 font-bold md:text-3xl lg:text-4xl">
+                You Can Easily Find
+                This App…!
+            </h2>
+            <p class="md:w-80 text-base mt-6 text-gray-600">
+                I say chap that's suing lavatory chip shop gosh off his smashing boot are you taking the piss posh loo
+                brilliant.
+            </p>
+
+            <div class="mt-4 md:mt-6 lg:mt-10 flex gap-4 justify-center md:justify-start">
+                <button class="bg-white px-2 py-2 rounded-lg flex text-left text-xs text-gray-500 items-center">
+                    <img src="/Images/Apple-logo.png" class="w-12 h-12" alt="App Store">
+                    <div class="flex flex-col">
+
+                        Download on the<span class="text-black font-semibold">App Store</span>
+                    </div>
+                </button>
+
+                <button class="bg-black px-3 py-3 rounded-lg flex text-left text-xs text-gray-400 items-center">
+                    <img src="/Images/PlayStore-logo.png" class="w-7 h-7" alt="App Store">
+                    <div class="flex flex-col ml-2">
+
+                        Download on the<span class="text-white font-semibold">Play Store</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="md:w-2/3 flex justify-center md:justify-end">
+            <img src="/Images/Mobile.png" alt="Log-in-page" class="w-3/5 md:w-4/5">
+        </div>
+    </section>
+
+
+    <!-- Latest News -->
+
+    <section class="px-4 md:px-10 lg:px-20 py-10">
+        <div class="text-center mt-20">
+            <h2 class="text-blue-500 font-semibold mb-2">Get Our Application</h2>
+            <h1 class="text-4xl font-bold">Latest News</h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+
+            <div>
+                <img src="/Images/news-image-1.png" alt="News Image 1" class="mx-auto w-64 md:w-auto">
+                <div class="flex">
+                    <div class="p-6">
+                        <svg width="39px" height="2" viewBox="0 0 39 2" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mt-4">
+                            <line y1="1" x2="39" y2="1" stroke="#FFAF2E" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="mt-6">
+                        <h3 class="text-xl font-semibold mb-6 md:w-4/5">
+                            It Does Not Matter Hows Slowly go as Long
+                        </h3>
+                        <a href="#" class="text-gray-600">
+                            Continue Reading →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="/Images/news-image-2.png" alt="News Image 2" class="w-64 md:w-[340px] md:h-[330px] mx-auto">
+                <div class="flex">
+                    <div class="p-6">
+                        <svg width="39px" height="2" viewBox="0 0 39 2" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mt-4">
+                            <line y1="1" x2="39" y2="1" stroke="#FFAF2E" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="mt-6">
+                        <h3 class="text-xl font-semibold mb-6 md:w-4/5">
+                            Netbook Network Added New Photo Filter
+                        </h3>
+                        <a href="#" class="text-blue-600">
+                            Continue Reading →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <img src="/Images/news-image-3.png" alt="News Image 1" class="w-64 md:w-[340px] md:h-[330px] mx-auto">
+                <div class="flex">
+                    <div class="p-6">
+                        <svg width="39px" height="2" viewBox="0 0 39 2" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mt-4">
+                            <line y1="1" x2="39" y2="1" stroke="#FFAF2E" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="mt-6">
+                        <h3 class="text-xl font-semibold mb-6 md:w-4/5">
+                            It Does Not Matter Hows Slowly go as Long
+                        </h3>
+                        <a href="#" class="text-gray-600">
+                            Continue Reading →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-700 text-white">
+        <div class="text-left py-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 px-4 md:px-10 lg:px-20 pt-10">
+            <!-- Home Section -->
+            <div>
+                <h3 class="text-white text-base md:text-xl font-semibold my-3 md:my-4">Home</h3>
+                <ul class="space-y-2 md:space-y-4 md:mt-6 text-xs md:text-base text-gray-200 hover:text-gray-400">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources Section -->
+            <div>
+                <h3 class="text-white text-base md:text-xl font-semibold my-3 md:my-4">Resources</h3>
+                <ul class="space-y-2 md:space-y-4 md:mt-6 text-xs md:text-base text-gray-200 hover:text-gray-400">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+
+            <!-- Community Section -->
+            <div>
+                <h3 class="text-white text-base md:text-xl font-semibold my-4 md:my-4">Community</h3>
+                <ul class="space-y-2 md:space-y-4 md:mt-6 text-xs md:text-base text-gray-200 hover:text-gray-400">
+                    <li><a href="#">NewsFeed</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Friends</a></li>
+                    <li><a href="#">Forums</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Links Section -->
+            <div>
+                <h3 class="text-white text-base md:text-xl font-semibold my-4 md:my-6 lg:my-4">Main links</h3>
+                <ul class="space-y-2 md:space-y-4 md:mt-6 text-xs md:text-base text-gray-200 hover:text-gray-400">
+                    <li><a href="#">Members</a></li>
+                    <li><a href="#">Activity</a></li>
+                    <li><a href="#">Groups</a></li>
+                    <li><a href="#">Private Group</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div>
+                <h3 class="text-white text-base md:text-xl font-semibold my-4 md:my-6 lg:my-4 md:w-4/5">Subscribe Cirkle
+                    Newsletter</h3>
+                <p class="text-gray-400 text-sm md:text-base md:mt-6">Subscribe to be the first one to know about
+                    updates. Enter your email</p>
+                <div
+                    class="flex bg-gray-800 rounded-lg overflow-hidden text-gray-200 mt-3 md:mt-6 text-xs md:text-base">
+                    <input type="email" placeholder="Email Address"
+                        class="bg-transparent px-3 py-1 md:px-6 md:py-2 w-full text-white focus:outline-none">
+                    <button class="bg-white text-gray-900 rounded-lg px-4 py-2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div
+            class="md:flex text-center md:justify-between md:items-center bg-gray-900  py-6 px-4 md:px-10 lg:px-20 py-6">
+            <p class="text-xs md:text-sm my-2 md:my-0">Besnik Creative Agency.</p>
+            <div class="flex justify-center text-xl md:text-2xl font-bold gap-2 my-2 md:my-0">
+                <img src="/Images/Logo.png" alt="Logo" height="34px" width="34px">
+                Netbook
+            </div>
+
+            <div class="flex space-x-3 justify-center text-gray-400 hover:text-white my-2 md:my-0">
+                <a href="#"><img src="/Images/twitter-logo.png" alt="twitter-logo" class="w-9 h-9"></a>
+                <a href="#"><img src="/Images/instagram-logo.png" alt="instagram-logo" class="w-9 h-9"></a>
+                <a href="#"><img src="/Images/facebook-logo.png" alt="facebook-logo" class="w-9 h-9"></a>
+                <a href="#"><img src="/Images/linkedin-logo.png" alt="linkedin-logo" class="w-9 h-9"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
